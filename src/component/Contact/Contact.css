@@ -1,0 +1,110 @@
+.contact-section {
+    background-color: #004e66; 
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 40px 0; 
+}
+  
+.contactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+  
+.contactRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+.contactCol {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px; 
+}
+  
+.contactCol-md-4 {
+    max-width: 25%; 
+}
+
+.contactCol p,
+.contactCol h5 {
+    text-align: left;
+}
+  
+.font-weight-bold {
+    font-weight: bold;
+    text-align: left;
+}
+  
+.contactButton, 
+.customButton {
+    background-color: white; 
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: black;
+    cursor: pointer;
+}
+  
+.action-arrow::after {
+    content: '→';
+    padding-left: 5px;
+}
+  
+.contactSocialList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+  
+.contactSocialList li {
+    margin-right: 15px; 
+}
+  
+.contactSocialList a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+  
+.contactSocialList a:hover {
+    color: #00b4d8; 
+}
+  
+ 
+.faFacebookF, .faInstagram, .faLinkedinIn {
+    font-size: 24px; 
+    transition: color 0.3s ease;
+}
+  
+.faFacebookF:hover {
+    color: #3b5998; 
+}
+  
+.faInstagram:hover {
+    color: #e1306c; 
+}
+  
+.faLinkedinIn:hover {
+    color: #0077b5; 
+}
+  
+
+@media (max-width: 768px) {
+    .contactCol-md-4 {
+      max-width: 100%;
+      display: block;
+    }
+  
+    .contactRow {
+      justify-content: center;
+    }
+}
+  

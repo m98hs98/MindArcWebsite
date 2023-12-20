@@ -1,0 +1,163 @@
+.intro {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.intro h1,
+.intro h2,
+.intro p {
+    text-align: left;
+}
+  
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+  
+.intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+  
+.intro-highlight {
+    color: #007bff;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.intro-highlight {
+    animation: slideUp 0.5s ease forwards;
+}
+
+.exit {
+    animation: slideDown 0.5s ease forwards;
+}
+  
+.intro p {
+    font-size: 1rem; 
+    color: #333;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+  
+.intro-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+  
+.intro-logos img {
+    max-height: 100px;
+    margin: 0 2rem;
+    vertical-align: middle;
+}
+
+
+.intro-logos-shopify {
+    max-width: 180px;
+    max-height: 60px;
+}
+
+.intro-logos-aws {
+    max-width: 100px;
+    max-height: 60px;
+}
+
+.intro-logos-google {
+    max-width: 90px;
+    max-height: 60px;
+}
+
+.intro-logos-adwords {
+    max-width: 90px;
+    max-height: 60px;
+}
+
+.intro-logos-ringcentral {
+    max-width: 150px;
+    max-height: 60px;
+}
+
+.intro-logos-zoom {
+    max-width: 180px;
+    max-height: 60px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .intro {
+        padding: 2rem 1rem; 
+    }
+
+    .intro h1 {
+        font-size: 2rem; 
+        margin-bottom: 0.5rem; 
+    }
+
+    .intro h2 {
+        font-size: 1.2rem; 
+        margin-bottom: 1rem; 
+    }
+
+    .intro p {
+        font-size: 0.9rem; 
+        width: 100%; 
+        margin-bottom: 1rem;
+    }
+
+    .intro-logos {
+        flex-direction: column; 
+        gap: 1rem;
+    }
+
+    .intro-logos img {
+        max-height: 80px; 
+        margin: 0.5rem; 
+    }
+
+    .intro-logos-shopify,
+    .intro-logos-zoom {
+        max-width: 120px;
+        max-height: 40px;
+    }
+
+    .intro-logos-aws,
+    .intro-logos-google,
+    .intro-logos-adwords {
+        max-width: 80px;
+        max-height: 40px;
+    }
+
+    .intro-logos-ringcentral {
+        max-width: 100px;
+        max-height: 40px;
+    }
+}
