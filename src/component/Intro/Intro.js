@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Intro.css';
-// Import logos if you have them saved locally
-// import logoShopify from './path-to-shopify-logo.png';
+
 
 
 const sentences = [
