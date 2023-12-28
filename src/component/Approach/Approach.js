@@ -5,7 +5,7 @@ import workplaceImage from '../../pics/workplace.jpg';
 const Approach = () => {
   return (
     <div className="Approach">
-      <div className="wave-container">
+      <div className="wave-container waveAnimation">
         <div className="wave-containerInner bgTop full-width absolute">
             <div className='wave waveTop'></div>
         </div>
