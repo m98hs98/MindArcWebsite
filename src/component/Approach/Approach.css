@@ -127,31 +127,36 @@
     filter: invert(7%) sepia(25%) saturate(397%) hue-rotate(120deg) brightness(96%) contrast(91%);
 }
 
+.waveTop, .waveMiddle, .waveBottom {
+    background-size: 50% 100px;
+}
+
 .waveTop {
     background: url('https://cdn.shopify.com/s/files/1/1987/3449/files/wave.svg?v=1594885916');
-    background-size: 20% 100px;
+    /* background-size: 20% 100px; */
     background-position: 20% bottom;
 }
 
 .waveAnimation .waveTop {
-    -webkit-animation: move_wave 22s linear infinite;
-    animation: move_wave 22s linear infinite;
+    -webkit-animation: move_wave 20s linear infinite;
+    animation: move_wave 20s linear infinite;
 }
 
 .waveMiddle {
     background: url('https://cdn.shopify.com/s/files/1/1987/3449/files/wave.svg?v=1594885916');
-    background-size: 50% 120px;
+    /* background-size: 50% 120px; */
     background-position: 40% bottom;
 }
 
 .waveAnimation .waveMiddle {
-    -webkit-animation: move_wave 35s linear infinite;
-    animation: move_wave 35s linear infinite;
+    -webkit-animation: move_wave 25s linear infinite;
+    animation: move_wave 25s linear infinite;
 }
 
 .waveBottom {
     background: url('https://cdn.shopify.com/s/files/1/1987/3449/files/wave.svg?v=1594885916');
-    background-size: 50% 100px;
+    /* background-size: 50% bottom; */
+    background-position: 60% bottom;
 }
 
 .waveAnimation .waveBottom {
