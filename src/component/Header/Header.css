@@ -47,7 +47,7 @@
   background-color: #00ACEF; 
   color: white;
   padding: 0.05rem 5rem;
-  min-height:32px;
+  min-height: 32px;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -57,6 +57,7 @@
   margin-bottom: 0.5rem;
   transition: all 0.2s ease-in-out;
   letter-spacing: 0.1em;
+  white-space: nowrap;
 }
 
 .header-contact {
