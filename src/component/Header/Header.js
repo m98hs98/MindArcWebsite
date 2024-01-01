@@ -36,10 +36,10 @@ const Header = () => {
                                         <a className='menu-link' title='our work' href='/'>OUR WORK</a>
                                     </li>
                                     <li className='menu-item'>
-                                        <a className='menu-link' title='about us' href='/'>About Us</a>
+                                        <a className='menu-link' title='about us' href='/'>ABOUT US</a>
                                     </li>
                                     <li className='menu-item'>
-                                        <a className='menu-link' title='blog' href='/'>Blog</a>
+                                        <a className='menu-link' title='blog' href='/'>BLOG</a>
                                     </li>
                                 </ul>
                             </nav>

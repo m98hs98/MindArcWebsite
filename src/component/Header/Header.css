@@ -2,7 +2,13 @@
   background-color: transparent; 
   color: #000; 
   transition: background-color 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
   margin-top: 0;
+  margin-bottom: 10px;
+  /* padding-bottom: 20px; */
 }
 
 .header-container {
@@ -22,12 +28,14 @@
   display: flex;
   gap: 2rem; 
   justify-content: center;
+  padding: 0;
 }
 
 .menu-link {
   text-decoration: none;
   color: inherit; 
   font-size: 1em;
+  font-weight: 600;
 }
 
 .logo-wrapper img {
@@ -38,16 +46,17 @@
 .contact-us-button .button {
   background-color: #00ACEF; 
   color: white;
-  padding: 0.05rem 3rem;
+  padding: 0.05rem 5rem;
+  min-height:32px;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5rem;
   transition: all 0.2s ease-in-out;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
 }
 
 .header-contact {
@@ -62,6 +71,7 @@
   color: #000;
   text-align: center;
   font-weight: bold;
+  margin-right: 20px;
 }
 
 .header .header-container {
@@ -74,6 +84,7 @@
 
 .header.scrolled {
   background-color: #000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
