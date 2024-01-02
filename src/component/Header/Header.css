@@ -8,14 +8,15 @@
   z-index: 1000;
   margin-top: 0;
   margin-bottom: 10px;
-  /* padding-bottom: 20px; */
 }
 
 .header-container {
+  position: relative; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
+  /* flex-wrap: wrap; */
 }
 
 .header-main {
@@ -38,9 +39,64 @@
   font-weight: 600;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 2%;
+  box-shadow: 8px 16px 16px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 100vw;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.mega-menu-column {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 20%;
+  padding: 10px;
+}
+
+.mega-menu-column h4 {
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.mega-menu-column a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.menu-item:hover .mega-menu {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .logo-wrapper img {
   height: 55px; 
   width: 55px; 
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-us-button .button {
@@ -54,17 +110,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.5rem;
   transition: all 0.2s ease-in-out;
   letter-spacing: 0.1em;
   white-space: nowrap;
-}
-
-.header-contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  /* margin: 0; */
 }
 
 .phone {
@@ -73,6 +122,7 @@
   text-align: center;
   font-weight: bold;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .header .header-container {
