@@ -129,8 +129,13 @@ const menuItems = [
             </div>
             {isMobileMenuOpen && (
                 <div className='mobile-menu'>
+                    <button className='close-button' onClick={toggleMobileMenu}>X</button>
                     <ul>
-
+                        <li><a href='/services' className='menu-item-services'>SERVICES</a></li>
+                        <li><a href='/our-work'>OUR WORK</a></li>
+                        <li><a href='/about-us'>ABOUT US</a></li>
+                        <li><a href='/blog'>BLOG</a></li>
+                        <li><a href='/contact-us'>CONTACT US</a></li>
                     </ul>
                 </div>
             )}

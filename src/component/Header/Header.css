@@ -160,7 +160,7 @@
 }
 
 .header.scrolled .logo-wrapper img {
-  content: url('https://www.mindarc.com.au/cdn/shop/t/5/assets/mindarc-logo-white.png?v=169087862988360412781587262100'); /* Path to the white logo */
+  content: url('https://www.mindarc.com.au/cdn/shop/t/5/assets/mindarc-logo-white.png?v=169087862988360412781587262100');
 }
 
 .menu-item.dropdown.active .mega-menu {
@@ -173,6 +173,7 @@
   flex-direction: column;
   justify-content: space-around;
   cursor: pointer;
+  z-index: 9999;
   top: 30px;
   bottom:20px;
   left: 15px;
@@ -200,25 +201,58 @@
 
 .mobile-menu {
   display: none; 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #000;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  z-index: 1200;
   padding-top: 60px; 
+}
+
+.mobile-menu.open {
+  display: block;
 }
 
 .mobile-menu ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-top: 40px;
+  text-align: left;
 }
 
 .mobile-menu li a {
+  font-size: 1.5rem;
+  font-weight: bold;
   display: block;
-  padding: 10px;
+  padding: 20px;
   color: white;
   text-decoration: none;
+}
+
+.menu-item-services:after {
+  content: '\2192';
+  padding-left: 85vw;
+}
+
+.mobile-menu li a.menu-item-services:after {
+  content: '\2192';
+  font-size: 1.5rem;
+  padding-left: 75vw;
+  font-weight: bold;
+}
+
+.mobile-menu .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
 }
 
 .phone-icon {
@@ -231,6 +265,24 @@
 
 
 @media (max-width: 990px) {
+
+  .header,
+  .header.scrolled {
+    background-color: #000;
+  }
+
+  .hamburger-menu .bar, .header.scrolled .hamburger-menu .bar {
+    background-color: #fff;
+  }
+
+  .header .logo-wrapper img, .header.scrolled .logo-wrapper img {
+    content: url('https://www.mindarc.com.au/cdn/shop/t/5/assets/mindarc-logo-white.png?v=169087862988360412781587262100');
+  }
+
+  .phone-icon, .header.scrolled .phone-icon {
+    color: #fff;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
