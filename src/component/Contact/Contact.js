@@ -19,13 +19,13 @@ const Contact = () => {
                         <p>Email: hello@mindarc.com.au</p>
                         <p>We're open 9am - 5pm weekdays</p>
                         <p>Start a conversation...</p>
-                        <a className="contactButton contactButton-primary action-arrow" href="/pages/contact-us">Contact Us</a>
+                        <a className="contactButton contactButton-primary action-arrow" href="/pages/contact-us">Lets Talk</a>
                     </div>
                     <div className="contactCol contactCol-md-4">
                         <h5>Headquarters</h5>
                         <p>4 Australia St</p>
                         <p>Camperdown NSW 2050</p>
-                        <a className="customButton customButton-primary" href="https://www.google.com/search?q=company+address" target="">Find Us</a>
+                        <a className="customButton customButton-primary action-arrow" href="https://www.google.com/search?q=company+address" target="">Get Directions</a>
                     </div>
                     <div className="contactCol contactCol-md-4">
                         <h5>Follow Us</h5>

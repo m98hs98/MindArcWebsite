@@ -32,10 +32,15 @@
 .contactCol h5 {
     text-align: left;
 }
+.contactCol h5 {
+    font-weight: bold;
+    font-size: 1rem;
+}
   
 .font-weight-bold {
-    font-weight: bold;
+    font-size: 1.5rem;
     text-align: left;
+    line-height: 2;
 }
   
 .contactButton, 
@@ -45,7 +50,8 @@
     text-decoration: none;
     text-align: left;
     padding: 10px 20px;
-    display: inline-block;
+    display: block;
+    width: 60%;
     margin-top: 20px;
     border: black;
     cursor: pointer;
@@ -61,6 +67,7 @@
     padding: 0;
     display: flex;
     align-items: center;
+    font-size: 1.5rem;
 }
   
 .contactSocialList li {
