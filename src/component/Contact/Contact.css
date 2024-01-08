@@ -102,16 +102,61 @@
 .faLinkedinIn:hover {
     color: #0077b5; 
 }
-  
 
-@media (max-width: 768px) {
-    .contactCol-md-4 {
-      max-width: 100%;
-      display: block;
+
+@media (max-width: 990px) {
+    
+    .contactCol {
+        max-width: 100%; 
+        display: block;
+        margin: 20px auto;
+        padding: 0 15px;
     }
-  
+
+    /* .contactCol-md-4 {
+        max-width: 100%;
+    } */
+
+    .contactButton, 
+    .customButton {
+        width: auto;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .contactSocialList {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .contactSocialList li {
+        margin-right: 10px;
+    }
+
     .contactRow {
-      justify-content: center;
+        max-width: 100%;
+        min-width: 150px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .font-weight-bold {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contactCol h5 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contactCol h5,
+    .contactCol p {
+        text-align: center;
+        margin-top: 20px;
     }
 }
-  
