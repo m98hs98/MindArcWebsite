@@ -44,6 +44,14 @@ const Header = () => {
         return () => window.removeEventListener("resize", updateDimensions);
     }, []);
 
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const showHamburgerMenu = windowWidth <= 990 || !scrolled;
+
 
 
 const servicesDropdownContent = (
@@ -122,11 +130,14 @@ const menuItems = [
     return (
         <header className={scrolled ? 'header scrolled' : 'header'}>
 
-            <div className={`hamburger-menu ${isMobileMenuOpen ? 'open' : ''} ${scrolled ? '' : 'visible'}`} onClick={toggleMobileMenu}>
-                <div className='bar'></div>
-                <div className='bar'></div>
-                <div className='bar'></div>
-            </div>
+            {showHamburgerMenu && (
+                <div className={`hamburger-menu ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
+                    <div className='bar'></div>
+                    <div className='bar'></div>
+                    <div className='bar'></div>
+                </div>
+            )}
+            
             {isMobileMenuOpen && (
                 <div className='mobile-menu'>
                     <button className='close-button' onClick={toggleMobileMenu}>X</button>

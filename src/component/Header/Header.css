@@ -271,7 +271,12 @@
     background-color: #000;
   }
 
-  .hamburger-menu .bar, .header.scrolled .hamburger-menu .bar {
+  .hamburger-menu .bar, 
+  .header.scrolled .hamburger-menu .bar {
+    background-color: #fff;
+  }
+
+  .header.scrolled .hamburger-menu .bar {
     background-color: #fff;
   }
 
@@ -328,8 +333,12 @@
     display: block;
   }
 
-  .mobile-menu.open {
-    display: block;
+  /* .mobile-menu.open {
+    display: none;
+  } */
+
+  .mobile-menu.open ~ .headerSection .menu {
+    display: none;
   }
 
   .menu-item.dropdown.active .mega-menu {

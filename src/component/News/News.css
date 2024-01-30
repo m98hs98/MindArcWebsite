@@ -101,9 +101,10 @@
 
     .shg-rich-text, 
     .shg-theme-text-content {
-        width: 100%;
+        width: 80%;
         text-align: left;
         margin-top: 2rem;
+        margin-left: 15px;
     }
 
     .shg-rich-text h3 {
@@ -117,7 +118,7 @@
     }
 
     .button {
-        width: 40%;
+        width: 70%;
         padding: 10px;
         margin-top: 20px;
         font-size: 1em;
@@ -128,7 +129,7 @@
         font-size: 1.4em;
         font-weight: bold;
         margin-top: 3rem;
-        margin-left: 0.5rem;
+        margin-left: 2rem;
     }
 }
 

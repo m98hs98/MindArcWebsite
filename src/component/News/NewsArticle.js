@@ -20,7 +20,7 @@ const NewsArticle = ({ title, content, image, readMoreLink }) => {
             <div className="shg-box-content">
                 <div className="shg-image-container" style={{ backgroundImage: `url(${imageUrl})` }}>
                 </div>
-                <div className="shg-rich-text shg-theme-text-contenet">
+                <div className="shg-rich-text shg-theme-text-content">
                     <h3>{title}</h3>
                     <p>{content}</p>
                     <a className="button" href={readMoreLink}>Read More</a>
