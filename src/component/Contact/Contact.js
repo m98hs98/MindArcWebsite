@@ -15,8 +15,8 @@ const Contact = () => {
                     </div>
                     <div className="contactCol contactCol-md-4">
                         <h5>Reach Out</h5>
-                        <p>Call us on 1300 206 827</p>
-                        <p>Email: hello@mindarc.com.au</p>
+                        <p>Call us on 1300 346 937</p>
+                        <p>Email: hello@mindm.com.au</p>
                         <p>We're open 9am - 5pm weekdays</p>
                         <p>Start a conversation...</p>
                         <a className="contactButton contactButton-primary action-arrow" href="/pages/contact-us">Lets Talk</a>
@@ -24,7 +24,7 @@ const Contact = () => {
                     <div className="contactCol contactCol-md-4">
                         <h5>Headquarters</h5>
                         <p>4 Australia St</p>
-                        <p>Camperdown NSW 2050</p>
+                        <p>Macquarie Park NSW 2113</p>
                         <a className="customButton customButton-primary action-arrow" href="https://www.google.com/search?q=company+address" target="">Get Directions</a>
                     </div>
                     <div className="contactCol contactCol-md-4">

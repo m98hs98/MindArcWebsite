@@ -160,7 +160,7 @@
 }
 
 .header.scrolled .logo-wrapper img {
-  content: url('https://www.mindarc.com.au/cdn/shop/t/5/assets/mindarc-logo-white.png?v=169087862988360412781587262100');
+  content: url('/src/pics/Mlogo.jpeg');
 }
 
 .menu-item.dropdown.active .mega-menu {

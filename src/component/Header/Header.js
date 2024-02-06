@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaPhone } from 'react-icons/fa';
 import './Header.css';
+import logo from "../../pics/Mlogo.jpeg";
 
 const Header = () => {
 
@@ -100,7 +101,7 @@ const servicesDropdownContent = (
                 <a href='order-manager'>ADVANCED ORDERS MANAGER (SHOPIFY)</a>
                 <a href='visual-merchandiser'>VISUAL MERCHANDISER (SHOPIFY)</a>
                 <a href='onion-navigation'>ONION NAVIGATION (SHOPIFY)</a>
-                <a href='mindarc-middleware'>MINDARC MIDDLEWARE</a>
+                <a href='mindm-middleware'>MINDM MIDDLEWARE</a>
             </div>
         </div>
     </div>
@@ -173,12 +174,12 @@ const menuItems = [
                     </div>
                     <div className='logo-wrapper'>
                         <a className='logo-image' href='/'>
-                            <img src="//www.mindarc.com.au/cdn/shop/t/5/assets/mindarc-logo-blk.png?v=152472296200138488861589258936" alt='MindArc'/>
+                            <img src={logo} alt='MindM'/>
                         </a>
                     </div>
                     <div className='header-contact d-flex'>
                         {windowWidth <= 990 ? (
-                            <a href='tel:1300206827' className='phone-icon'>
+                            <a href='tel:1300346937' className='phone-icon'>
                                 <FaPhone />
                             </a>
                         ) : (
@@ -186,7 +187,7 @@ const menuItems = [
                                 <div className='contact-us-button'>
                                     <a href='/' title='contact us' className='button button-primary'>Contact Us!</a>
                                 </div>
-                                <div className='phone'>1300 206 827</div>
+                                <div className='phone'>1300 346 937</div>
                             </>
                         )}
                     </div>

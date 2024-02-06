@@ -40,6 +40,7 @@
 }
   
 .logo-image img {
+    border-radius: 50%;
     display: block; 
     height: 50px; 
     width: auto; 

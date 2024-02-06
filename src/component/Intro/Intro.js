@@ -33,8 +33,8 @@ const Intro = () => {
 
   return (
     <div className="intro">
-        <h1>MindArc</h1>
-        <h2>Who is MindArc? <span className={`intro-highlight ${exit ? 'exit' : ''}`}>{sentences[index]}</span></h2>
+        <h1>MindM</h1>
+        <h2>Who is MindM? <span className={`intro-highlight ${exit ? 'exit' : ''}`}>{sentences[index]}</span></h2>
         <p>Since 2010, our passionate team of technology experts have followed a path of relentless learning and experimentation in all things digital, retail, and everything in-between. Our vision is to apply our collective experience and help enable and transform commerce through smart technology...</p>
         <div className="intro-logos">
             <img 
